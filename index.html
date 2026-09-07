@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>BORD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    (function () {
+      var ios = 'https://apps.apple.com/app/id6802039137';
+      var android = 'https://play.google.com/store/apps/details?id=com.upanddown.app';
+      var ua = navigator.userAgent || '';
+      if (/iPhone|iPad|iPod/i.test(ua)) location.replace(ios);
+      else if (/Android/i.test(ua)) location.replace(android);
+    })();
+  </script>
+</head>
+<body style="font-family: system-ui; padding: 2rem; text-align: center">
+  <h1>BORD</h1>
+  <p>Télécharge l’app :</p>
+  <p><a href="https://apps.apple.com/app/id6802039137">App Store</a></p>
+  <p><a href="https://play.google.com/store/apps/details?id=com.upanddown.app">Google Play</a></p>
+</body>
+</html>
