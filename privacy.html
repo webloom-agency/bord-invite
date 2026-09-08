@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BORD — Politique de confidentialité</title>
+  <meta name="description" content="Politique de confidentialité de l’application BORD." />
+  <link rel="icon" type="image/png" href="https://webloom-agency.github.io/bord-invite/favicon.png" />
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      padding: 2rem 1.25rem 3rem;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #0B0B0E;
+      color: #F4F5F8;
+      line-height: 1.55;
+    }
+    main { max-width: 40rem; margin: 0 auto; }
+    h1 { font-size: 1.6rem; letter-spacing: -0.02em; margin: 0 0 0.5rem; }
+    h2 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; color: #10FF70; }
+    p, li { color: #C8CBD4; font-size: 0.95rem; }
+    ul { padding-left: 1.2rem; }
+    a { color: #10FF70; font-weight: 600; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { color: #A0A4B0; font-size: 0.85rem; margin-bottom: 1.5rem; }
+    nav { margin-bottom: 1.5rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="./">BORD</a> ·
+      <a href="./terms.html">Conditions d’utilisation</a>
+    </nav>
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">Application BORD · Éditeur : Webloom · Contact : <a href="mailto:francoisdragon@gmail.com">francoisdragon@gmail.com</a> · Dernière mise à jour : septembre 2026</p>
+
+    <h2>Responsable</h2>
+    <p>Webloom, éditeur de l’application BORD. Pour toute question relative à vos données : <a href="mailto:francoisdragon@gmail.com">francoisdragon@gmail.com</a>.</p>
+
+    <h2>Données traitées</h2>
+    <ul>
+      <li>Numéro de téléphone et nom (compte)</li>
+      <li>Localisation ponctuelle lorsque tu actives « I'm Up » (point + rayon + expiration ; effacée à l’arrêt ou à l’expiration)</li>
+      <li>Pour activer I'm Up : localisation « lorsque l’app est active » et, si besoin, « Toujours » pour la géofence de sortie de zone — pas de GPS continu ni d’historique de trajets. Sans ces autorisations, I'm Up n’est pas activé ; le reste de l’app reste utilisable</li>
+      <li>Horodatages / dernier pin I'm Up (conservé après Down, max ~14 jours pour prévenir un ami Up à proximité) — pas utilisés pour proposer un lieu ni ouvrir le chat</li>
+      <li>Relations d’amitié et messages liés aux rendez-vous</li>
+      <li>Carnet : les numéros sont lus sur ton appareil pour trouver des comptes existants (comparaison ponctuelle, à ta demande) ; le carnet n’est pas stocké sur nos serveurs ; les contacts sans compte ne sont jamais envoyés</li>
+      <li>Invitations : empreinte irréversible du numéro (HMAC), jamais le numéro en clair, 90 jours max ; le libellé reste sur ton téléphone ; tu peux annuler une invitation à tout moment</li>
+      <li>Le message d’invitation part de ton téléphone (SMS / partage), jamais de nos serveurs vers quelqu’un qui n’a pas de compte</li>
+    </ul>
+
+    <h2>Finalités</h2>
+    <p>Authentification ; mise en relation entre amis disponibles dans un rayon mutuel ; suggestions de lieux (Google Places via notre serveur) ; arrêt automatique de la disponibilité hors zone ; rappels de service rares « T’es Up ? » (désactivables dans Profil) ; suggestion ponctuelle Focus / Ne pas déranger pendant un rendez-vous accepté (désactivable dans Profil).</p>
+
+    <h2>Bases légales</h2>
+    <p>Exécution du service (compte, I'm Up) ; consentement (contacts, localisation) ; intérêt légitime pour certaines suggestions de confort, avec opposition dans Profil.</p>
+
+    <h2>Durée</h2>
+    <p>Disponibilité jusqu’à expiration, arrêt manuel ou sortie de zone ; invitations en attente 90 jours ; compte jusqu’à suppression.</p>
+
+    <h2>Droits (RGPD)</h2>
+    <p>Accès, rectification, effacement (Profil → Supprimer mon compte), opposition (interrupteurs Profil), retrait du consentement localisation dans les Réglages du téléphone. Contact : <a href="mailto:francoisdragon@gmail.com">francoisdragon@gmail.com</a>.</p>
+
+    <h2>Sous-traitants</h2>
+    <p>Supabase (hébergement / auth), fournisseur SMS, Google (Places / Maps), Apple et Google (services de localisation de l’appareil).</p>
+
+    <h2>Âge</h2>
+    <p>BORD est destiné aux personnes de 18 ans et plus.</p>
+  </main>
+</body>
+</html>
