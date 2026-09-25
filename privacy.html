@@ -45,8 +45,9 @@
       <li>Localisation ponctuelle lorsque tu actives « I'm Up » (point + rayon + expiration ; effacée à l’arrêt ou à l’expiration)</li>
       <li>Pour activer I'm Up : localisation « lorsque l’app est active » et, si besoin, « Toujours » pour la géofence de sortie de zone — pas de GPS continu ni d’historique de trajets. Sans ces autorisations, I'm Up n’est pas activé ; le reste de l’app reste utilisable</li>
       <li>Horodatages / dernier pin I'm Up (conservé après Down, max ~14 jours pour prévenir un ami Up à proximité) — pas utilisés pour proposer un lieu ni ouvrir le chat</li>
-      <li>Relations d’amitié et messages liés aux rendez-vous</li>
-      <li>Carnet : les numéros sont lus sur ton appareil pour trouver des comptes existants (comparaison ponctuelle, à ta demande) ; le carnet n’est pas stocké sur nos serveurs ; les contacts sans compte ne sont jamais envoyés</li>
+      <li>Relations d’amitié, messages et contenus de profil liés au service</li>
+      <li>Jeton de notifications push (appareil), pour t’alerter d’un message, d’une proposition ou d’un ami Up</li>
+      <li>Carnet : à ta demande, les numéros sont lus sur ton appareil. Ceux qui pourraient déjà avoir un compte sont envoyés une fois pour comparaison (pas stockés comme carnet). Les contacts sans compte ne sont jamais envoyés</li>
       <li>Invitations : empreinte irréversible du numéro (HMAC), jamais le numéro en clair, 90 jours max ; le libellé reste sur ton téléphone ; tu peux annuler une invitation à tout moment</li>
       <li>Le message d’invitation part de ton téléphone (SMS / partage), jamais de nos serveurs vers quelqu’un qui n’a pas de compte</li>
     </ul>
@@ -64,7 +65,7 @@
     <p>Accès, rectification, effacement (Profil → Supprimer mon compte), opposition (interrupteurs Profil), retrait du consentement localisation dans les Réglages du téléphone. Contact : <a href="mailto:francoisdragon@gmail.com">francoisdragon@gmail.com</a>.</p>
 
     <h2>Sous-traitants</h2>
-    <p>Supabase (hébergement / auth), fournisseur SMS, Google (Places / Maps), Apple et Google (services de localisation de l’appareil).</p>
+    <p>Supabase (hébergement / auth), fournisseur SMS, Expo (notifications push), Google (Places / Maps), Apple et Google (services de localisation de l’appareil).</p>
 
     <h2>Âge</h2>
     <p>BORD est destiné aux personnes de 18 ans et plus.</p>
